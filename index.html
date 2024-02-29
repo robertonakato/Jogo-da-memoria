@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memoria</title>
+    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecario">
+            <div class="titulo"><h2 class="conttitulo">Adrian e Ray  </br>  Jogo da memoria</h2></div>
+            <div class="pontuacao">
+                <h2 class="contpotuacao">Sua pontuação é:</h2>
+                <h2 class="pontos">0</h2>
+            </div>
+        <div class="tempo">
+        <h2 class="conttempo">Seu tempo é:</h2>
+        <h2 class="temp">0 </h2>
+        </div>
+        <div class="regras">
+             <h2 class="contregras" onclick="mostrarregras()">Regras</h2>
+             <div class="explicacoes">
+                <div class="imagem">
+                    <img src="./img/05.png">
+                </div>
+                <div class="topicos">
+                        <p class="rayexplica">Olá claro Jogador, Eu me chamo Ray e vou te explicar As regras:</p></br>
+                        <p class="proximo" onclick="proximo()">>></p>
+                </div>
+             </div>
+        </div>
+        </div>
+        <div class="game"></div>
+        <button class="resert" onclick="window.location.reload()">RESETAR</button>
+    </div>
+
+ <script src="./js/index.js" defer></script>   
+</body>
+</html>
+
