@@ -164,7 +164,7 @@ function proximafase() {
     imagens.sort(() => Math.random() > 0.5 ? 2 : -1);
 
     for (let i = 0; i < imagens.length; i++) {
-        if (novoselementos === 5) {
+        if (novoselementos === 12) {
             informacoes.innerHTML = `<p class="fase"> Parabéns Jogador, você finalizou o Jogo, aguarde por mais atualizações, ou jogue novamente </p>`;     
                         mostrarregras()
        
