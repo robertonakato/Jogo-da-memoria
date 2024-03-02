@@ -67,7 +67,7 @@ letter-spacing: 0.1em;
 .game{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 60VW;
     gap:10px;
     transform-style: preserve-3d;
     flex-direction: row
@@ -128,11 +128,14 @@ button:focus{
 }
 
 .explicacoes{
-    height: 35vh;
-    width: 45vw;
+    height: 28vh;
+    width: 35vw;
     display: none;
     position: absolute;
     z-index: 2;
+    background: #e9d2d2dd;
+    border-radius: 10%;
+
 }
 .explicacoes .imagem{
     flex:1;
@@ -140,12 +143,11 @@ button:focus{
 .explicacoes .topicos{
     flex:1;
     overflow-y: auto;
-    background: #ffffff;
-    border-radius: 10%;
+    height: auto;
+    padding: 5%;
 }
 p{
     font-size: 2.7vh;
-    color: blue;
     font-family: "Fjalla One", sans-serif;
     margin-left: 5%;
 }
@@ -153,7 +155,12 @@ p{
     cursor: pointer;
 }
 .fase{
-    color:red;
-    font-size: 2.5vw;
+    font-size: 2.7vh;
+    font-family: "Fjalla One", sans-serif;
     font-family:"Black Ops One", system-ui ;
+}
+.proximo{
+    text-align: end;
+    align-items: end;
+    font-size: 4vh;
 }
