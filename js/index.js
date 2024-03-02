@@ -49,7 +49,7 @@ function mostrarregras(){
     if ( !regrasvisiveis){
         clearInterval(tempocorrendo)
         regras.style.display = "flex";
-        nomeregras.textContent = "Fechar Regras";
+        nomeregras.textContent = "Fechar";
         regras.style.display = "flex";
         regrasvisiveis = true
         tempos = false
@@ -118,12 +118,9 @@ function check() {
                 mostrarregras();
             }, 1000);
             setTimeout(() => {
-                informacoes.innerHTML = ` <p>Olá claro Jogador, Eu me chamo Ray e vou te explicar As regras:</p>
-                <p> 1 - Como qualquer jogo da memoria, segue as regras padrão de todos, ache duas figuras iguais para marcar seus pontos</p>
-                <p> 2 - Ache três Pares Iguais em sequência para ganhar pontos extras</p>
-                <p> 3 - Erre três vezes em sequência e perca um ponto</p>
-                <p> 4 - O Jogo termina quanto passar por todas as fases, ou bater os 10 minutos</p>`;
-            }, 1500);
+                informacoes.innerHTML = `<p class="rayexplica">Olá claro Jogador, Eu me chamo Ray e vou te explicar As regras:</p></br>
+                <p class="proximo" onclick="proximo()">>></p>`;
+            }, 5000);
             setTimeout(() => {
                 proximafase();
             }, 1000);
@@ -167,8 +164,10 @@ function proximafase() {
     imagens.sort(() => Math.random() > 0.5 ? 2 : -1);
 
     for (let i = 0; i < imagens.length; i++) {
-        if (novoselementos === 12) {
-            alert("Você finalizou o Jogo!");
+        if (novoselementos === 5) {
+            informacoes.innerHTML = `<p class="fase"> Parabéns Jogador, você finalizou o Jogo, aguarde por mais atualizações, ou jogue novamente </p>`;     
+                        mostrarregras()
+       
             break; 
         }
         let box = document.createElement("div");
