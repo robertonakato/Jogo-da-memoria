@@ -1,0 +1,133 @@
+body{
+    overflow: hidden;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.painel{
+    flex: 1;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(0, #120c56, #000000);
+    display: flex;
+    flex-direction: row;
+}
+
+
+.img1,.img2{
+    display: flex;
+    align-items: end;
+    flex: 1;
+}
+.img2 img{
+    height: 25vh;
+    width: 20vw;
+    transform: scaleX(-1);
+    }
+.img1 img{
+    height: 30vh;
+    width: 20vw;
+    }
+.img2{
+    justify-content: end;
+}
+.titulo{
+    display: flex;
+    flex:1;
+    font-size: clamp(25px, 4vw, 35px);
+    color:  rgb(251, 255, 24);
+    font-family: "Black Ops One", system-ui;
+    text-shadow: 2px 2px 2px #fff5f5;
+    justify-content: center;
+    align-items: end;    
+}
+.conttitulo{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background: linear-gradient(0,#000000, #120c56 );
+
+}
+button{
+    width: 30%;
+    padding: 1%;
+    font-size: 30px;
+    font-weight: 1000;
+    margin-top: 5px;
+    border-radius: 7%;
+    box-shadow: 1px 2px 5px black;
+    cursor: pointer;
+    background: blue
+}
+
+button:hover{
+    background: linear-gradient(100deg, rgb(194, 91, 91), rgb(2, 2, 35));
+    color: white;
+}
+button:active{
+    background: #000000;
+}
+.jogar{
+    margin-top: 10%;
+}
+a{
+    width: 100%;
+    display: flex ;
+    justify-content: center;
+    text-decoration: none;
+}
+.explicar{
+    background: linear-gradient(0,#000000, #120c56 );
+    flex: 1;
+    color: #ffffff;
+    display: none;
+    
+}
+.imagem{
+    height: 40vh;
+    
+}
+img{
+    height: 100%;
+}
+.img3{
+    transform: scaleX(-1);
+  
+}
+.topicos{
+    flex:1;
+    height: auto;
+    padding: 5%;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 1000;
+    font-size: 4vh;
+}
+.proximo{
+    text-align: end;
+    align-items: end;
+    cursor: pointer;
+}
+.proximo:hover{
+    color: rgb(0, 149, 255);
+}
+.fechar{
+    text-align: end;
+    align-items: end;
+    cursor: pointer;
+}
+.fechar:hover{
+    color: red;
+}
