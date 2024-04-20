@@ -13,8 +13,6 @@ body{
     padding: 15px;
     border: 2vw double  rgb(13, 13, 185);
     outline: 0.5vw solid rgba(0, 0, 0, 0.5);
-
-    
 }
 .pontuacao, .tempo{
 font-size: 0.5vw;
@@ -45,7 +43,6 @@ display: flex;
 
 a{
     text-decoration: none;
-
 }
 .container{
     position: relative;
@@ -143,9 +140,7 @@ button:focus{
 .explicacoes .topicos{
     flex:1;
     overflow-y: auto;
-    height: auto;
-    padding: 5%;
-}
+    height: auto;}
 p{
     font-size: 2.7vh;
     font-family: "Fjalla One", sans-serif;
